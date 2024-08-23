@@ -10,6 +10,8 @@
 body {
     background: #1849a3;
     color: #ededed;
+    line-height: 1.6;
+    font-size: 16px; /* Base font size for better scaling */
 }
 
 /* Header Styles */
@@ -18,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 5%;
     background: #081129;
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,7 @@ body {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -35,11 +37,11 @@ body {
 
 .navbar a {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 35px;
+    margin-left: 20px;
     transition: 0.3s;
     opacity: 0;
     animation: slideTop 1s ease forwards;
@@ -56,14 +58,16 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 70px 10% 0;
+    justify-content: center;
+    padding: 70px 5% 0;
+    text-align: center;
 }
 
 .home img {
-    height: 17rem;
-    width: 17rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -82,7 +86,7 @@ body {
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 700;
     margin: -3px 0;
     color: #ffffff;
@@ -91,7 +95,7 @@ body {
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #0ef;
     animation: slideBottom 1s ease forwards;
@@ -99,7 +103,7 @@ body {
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 18px;
     animation: slideLeft 2s ease forwards;
     animation-delay: 2s;
     margin-top: 20px;
@@ -137,11 +141,12 @@ body {
     grid-template-columns: 1fr;
     align-items: center;
     gap: 1.5rem;
-    padding: 70px 10%;
+    padding: 70px 5%;
+    text-align: center;
 }
 
 .about-text h2 {
-    font-size: 60px;
+    font-size: 48px;
 }
 
 .about-text h2 span {
@@ -149,7 +154,7 @@ body {
 }
 
 .about-text h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
@@ -158,21 +163,21 @@ body {
 
 .about-text p {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 4rem;
 }
 
 /* Skills Section */
 #skills {
-    padding: 70px 10%;
+    padding: 70px 5%;
     text-align: center;
     color: rgb(216, 200, 231);
 }
 
 .sub-title {
-    font-size: 60px;
-    padding-bottom: 70px;
+    font-size: 48px;
+    padding-bottom: 50px;
 }
 
 .sub-title span {
@@ -180,19 +185,19 @@ body {
 }
 
 .container {
-    padding: 90px;
+    padding: 50px;
 }
 
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-gap: 30px;
+    margin-top: 30px;
 }
 
 .services-list div {
     background-color: #b83913;
-    padding: 40px;
+    padding: 30px;
     font-size: 13px;
     font-weight: 13px;
     border-right: 10px;
@@ -202,12 +207,12 @@ body {
 }
 
 .services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .services-list div h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -226,35 +231,35 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-    padding: 70px 10%;
+    padding: 70px 5%;
     text-align: center;
 }
 
 .portfolio-item {
     background-color: rgb(35, 174, 184);
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     margin-bottom: 30px;
     color: #081b29;
 }
 
 .portfolio-item h3 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 .portfolio-item p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* Footer Section */
 footer {
-    padding: 70px 10%;
+    padding: 70px 5%;
     background: #081129;
 }
 
 .footer-text p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -269,54 +274,26 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 991px) {
-    .header {
-        padding: 10px 10%;
-    }
-
+@media (max-width: 1200px) {
     .navbar a {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .home {
-        padding: 100px 10% 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home img {
-        margin-bottom: 2rem;
-    }
-
-    .home-content {
-        text-align: center;
+        font-size: 18px;
+        margin-left: 15px;
     }
 
     .home-content h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
-    .about {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .home-content h3 {
+        font-size: 24px;
     }
 
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio {
-        grid-template-columns: 1fr;
-    }
-
-    .sub-title {
-        font-size: 48px;
+    .home-content p {
+        font-size: 16px;
     }
 
     .about-text h2 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .about-text h4 {
@@ -324,59 +301,152 @@ footer {
     }
 
     .about-text p {
+        font-size: 16px;
+    }
+
+    .services-list div h2 {
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .navbar a {
         font-size: 18px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .home img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text h4 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item h3 {
+        font-size: 24px;
+    }
+
+    .portfolio-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        font-size: 12px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text h4 {
+        font-size: 16px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
+
+    .services-list div {
+        padding: 20px;
+    }
+
+    .services-list div h2 {
+        font-size: 18px;
+    }
+}
+
+/* Keyframes */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
 @keyframes slideTop {
     0% {
-        transform: translateY(-100px);
-        opacity: 0;
+        transform: translateY(100px);
     }
+
     100% {
         transform: translateY(0);
-        opacity: 1;
     }
 }
 
 @keyframes slideBottom {
     0% {
-        transform: translateY(100px);
-        opacity: 0;
+        transform: translateY(-100px);
     }
+
     100% {
         transform: translateY(0);
-        opacity: 1;
     }
-}
-
-@keyframes slideright {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Adjust spacing between sections */
-section {
-    margin-bottom: 50px; /* Adjust this value as needed */
 }
